@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// Str is func
 func Str() {
 	//name := "a网络"
 	//fmt.Println(name)
