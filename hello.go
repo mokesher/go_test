@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"go_test/Arr"
+	"go_test/slic"
+)
 
 func main() {
 
@@ -77,10 +80,12 @@ func main() {
 	//v1 := make([]int,1,3)
 	//fmt.Println(len(v1), cap(v1))	//1 3
 
-	data := make([]int,3)	// [0 0 0]
-	data2 := append(data, 111)	//append内存地址相同 [0 0 0 111]
-	data[0] = 999
-	fmt.Println(data, data2)
+	//data := make([]int,3)	// [0 0 0]
+	//data2 := append(data, 111)	//append内存地址相同 [0 0 0 111]
+	//data[0] = 999
+	//fmt.Println(data, data2)
+	Arry.Arry_method()
+	slic.Slice_method()
 
 
 
