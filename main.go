@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go_test/Arr"
+	"go_test/map_go"
 	"go_test/slic"
 )
 
@@ -65,28 +65,8 @@ func main() {
 	////切片
 	//fmt.Println(name3[1:3])
 
-	// slice
-	//var nums []int
-	//// make只用于 slice、dict、channel
-	//var users = make([]int,1,2)
-	//var data = []int{11,22,33}
-	//fmt.Println(nums, users, data)
-	////切片的指针
-	//var v1 = new([]int)
-	//// 指针类型
-	//var v2 *[]int
-
-	//自动扩容
-	//v1 := make([]int,1,3)
-	//fmt.Println(len(v1), cap(v1))	//1 3
-
-	//data := make([]int,3)	// [0 0 0]
-	//data2 := append(data, 111)	//append内存地址相同 [0 0 0 111]
-	//data[0] = 999
-	//fmt.Println(data, data2)
-	Arry.Arry_method()
 	slic.Slice_method()
-
+	map_go.Map_test()
 
 
 
