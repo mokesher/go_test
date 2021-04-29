@@ -1,9 +1,6 @@
 package main
 
-import (
-	"go_test/map_go"
-	"go_test/slic"
-)
+import "go_test/TimeDate"
 
 func main() {
 
@@ -65,7 +62,8 @@ func main() {
 	////切片
 	//fmt.Println(name3[1:3])
 
-	slic.Slice_method()
-	map_go.Map_method()
-
+	//slic.Slice_method()
+	//map_go.Map_method()
+	//func_go.Func_method()
+	TimeDate.Time_method()
 }

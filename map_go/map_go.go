@@ -1,6 +1,9 @@
 package map_go
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func Map_method() {
 	fmt.Println("in the Map")
@@ -15,8 +18,11 @@ func Map_method() {
 		"name": "momo",
 		"age":  "18",
 	}
-	fmt.Println(m2)
-	// 推到
+	m22 := m2
+	m22["name"] = "coco"
+	fmt.Printf("m2: %v m22: %v\n", m2, m22)
+
+	// 推导声明
 	m3 := map[string]string{
 		"name": "momo",
 		"age":  "18",
@@ -56,5 +62,23 @@ func Map_method() {
 		}
 	}
 	fmt.Println(m5)
+
+	// map 排序
+	map1 := map[int]int{
+		1: 21,
+		3: 1,
+		5: 12,
+		2: 3,
+	}
+
+	var keySlice []int
+	for key, _ := range map1 {
+		keySlice = append(keySlice, key)
+	}
+	sort.Ints(keySlice)
+	fmt.Println(keySlice)
+	for _, v := range keySlice {
+		fmt.Printf("key: %v value: %v\n", v, map1[v])
+	}
 
 }
