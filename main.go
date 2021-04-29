@@ -66,13 +66,6 @@ func main() {
 	//fmt.Println(name3[1:3])
 
 	slic.Slice_method()
-	map_go.Map_test()
-
-
-
-
-
-
-
+	map_go.Map_method()
 
 }
