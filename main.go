@@ -1,6 +1,9 @@
 package main
 
-import "go_test/TimeDate"
+import (
+	"go_test/Struct"
+	"go_test/pointer"
+)
 
 func main() {
 
@@ -65,5 +68,7 @@ func main() {
 	//slic.Slice_method()
 	//map_go.Map_method()
 	//func_go.Func_method()
-	TimeDate.Time_method()
+	//TimeDate.Time_method()
+	pointer.Pointer_method()
+	Struct.Struct_method()
 }
