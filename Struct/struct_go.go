@@ -31,6 +31,7 @@ func (m MyInt) PrintMe() {
 	fmt.Println("i am iiiii")
 }
 
+// 嵌套匿名结构体
 type User struct {
 	Username string
 	Password string
@@ -42,6 +43,25 @@ type Address struct {
 	City string
 }
 
+// 父结构体
+type Animal struct {
+	name string
+}
+
+func (a Animal) run() {
+	fmt.Printf("%v 在运动\n", a.name)
+}
+
+// 子结构体
+type Dog struct {
+	Age    int
+	Animal //结构体嵌套 继承
+}
+
+func (d Dog) wang() {
+	fmt.Printf("%v 在旺旺\n", d.name)
+}
+
 func test_struct() {
 	var u User
 	u.Username = "moke"
@@ -50,6 +70,15 @@ func test_struct() {
 	u.Address.City = "beijing"
 	u.City = "gansu" // 当访问结构体成员时首先在结构体中查找，找不到去匿名结构体中查找
 	fmt.Printf("%#v\n", u)
+
+	var d = Dog{
+		Age: 20,
+		Animal: Animal{
+			name: "qiqi",
+		},
+	}
+	d.run()
+	d.wang()
 
 }
 

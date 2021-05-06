@@ -1,9 +1,6 @@
 package main
 
-import (
-	"go_test/Struct"
-	"go_test/pointer"
-)
+import "go_test/Jsonp"
 
 func main() {
 
@@ -69,6 +66,7 @@ func main() {
 	//map_go.Map_method()
 	//func_go.Func_method()
 	//TimeDate.Time_method()
-	pointer.Pointer_method()
-	Struct.Struct_method()
+	//pointer.Pointer_method()
+	//Struct.Struct_method()
+	Jsonp.Json_method()
 }
