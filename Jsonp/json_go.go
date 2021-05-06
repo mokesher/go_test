@@ -3,6 +3,7 @@ package Jsonp
 import (
 	"encoding/json"
 	"fmt"
+	"go_test/common"
 )
 
 // 结构体标签
@@ -18,6 +19,7 @@ type Class struct {
 }
 
 func Json_method() {
+	fmt.Printf("in the %v.\n", common.GetFuncName())
 	var s1 = Student{
 		ID:   17,
 		Name: "moke",
