@@ -40,7 +40,7 @@ func PrintPrime(PrimeChan chan int) {
 }
 
 func RouteTest3() {
-	intChan := make(chan int, 1000)
+	intChan := make(chan int, 200000)
 	primeChan := make(chan int, 100000)
 	exitChan := make(chan bool, 16)
 

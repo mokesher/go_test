@@ -1,6 +1,8 @@
 package main
 
-import "go_test/goroutine_go"
+import (
+	"go_test/channel_go"
+)
 
 func main() {
 
@@ -71,5 +73,6 @@ func main() {
 	//Jsonp.Json_method()
 	//test.Test_method()
 	//interface_go.Interface_method()
-	goroutine_go.GorouteMethod()
+	//goroutine_go.GorouteMethod()
+	channel_go.ChanMethod()
 }
