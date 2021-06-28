@@ -5,6 +5,7 @@ import (
 	"go_test/common"
 )
 
+// select 多路复用
 func selectTest() {
 	intChan := make(chan int, 10)
 	for i := 0; i < 10; i++ {
