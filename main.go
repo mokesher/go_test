@@ -1,7 +1,8 @@
 package main
 
 import (
-	"go_test/channel_go"
+	"go_test/reflect_go"
+	"go_test/test"
 )
 
 func main() {
@@ -71,8 +72,10 @@ func main() {
 	//pointer.Pointer_method()
 	//Struct.Struct_method()
 	//Jsonp.Json_method()
-	//test.Test_method()
+	test.Test_method()
 	//interface_go.Interface_method()
 	//goroutine_go.GorouteMethod()
-	channel_go.ChanMethod()
+	//channel_go.ChanMethod()
+	reflect_go.Test_reflect()
+
 }

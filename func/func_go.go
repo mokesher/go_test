@@ -175,6 +175,7 @@ func Func_method() {
 	add := do("+")
 	fmt.Println(add(1, 3))
 
-	test_defer()
+	//test_defer()
 
+	sync_main()
 }

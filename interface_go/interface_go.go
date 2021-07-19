@@ -29,18 +29,19 @@ func (p Camera) stop() {
 	fmt.Println("相机关机")
 }
 
-// 电话与相机都实现了usb接口
-func (c Computer) work(usb Usber) {
-	usb.start()
-	usb.stop()
-}
-
 func (p Phone) start() {
 	fmt.Println(p.Name, "启动")
 }
 
 func (p Phone) stop() {
 	fmt.Println(p.Name, "关机")
+}
+
+// 电话与相机都实现了usb接口
+
+func (c Computer) work(usb Usber) {
+	usb.start()
+	usb.stop()
 }
 
 // 空接口作为函数的参数
@@ -113,6 +114,7 @@ func Interface_method() {
 	com.work(camera)
 
 	EmptyInterface()
+
 	d := &Dog{
 		Name: "xx",
 	}

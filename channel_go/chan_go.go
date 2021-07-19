@@ -7,10 +7,12 @@ import (
 
 // select 多路复用
 func selectTest() {
+	// 定义1个管道，10个数据int
 	intChan := make(chan int, 10)
 	for i := 0; i < 10; i++ {
 		intChan <- i
 	}
+	// 定义1个管道，5个数据管道
 	stringChan := make(chan string, 5)
 	for i := 0; i < 5; i++ {
 		stringChan <- "Hello" + fmt.Sprintf("%d", i)
